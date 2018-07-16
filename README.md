@@ -14,6 +14,9 @@ For windows you may find binaries here: http://www.voidspace.org.uk/python/modul
 
 ## Usage:
 Convert a public key from XML to PEM: `python PemToXml.py -ptox -pub "path/to/public.pem"`
+
 Convert a public key from PEM to XML: `python PemToXml.py -xtop -pub "path/to/public.xml"`
+
 Convert a public key from XML to PEM:`python PemToXml.py -ptox -priv "path/to/private.pem"`
+
 Convert a public key from PEM to XML:`python PemToXml.py -xtop -priv "path/to/private.xml"`
