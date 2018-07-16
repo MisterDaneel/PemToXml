@@ -31,10 +31,10 @@ using System.Security.Cryptography;
 private static readonly string privateKeyXml = "...your XML here...";
 private static readonly string publicKeyXml = "...your XML here...";
 
- // see https://msdn.microsoft.com/en-us/library/system.security.cryptography.rsacryptoserviceprovider.aspx
- // let exception be thrown if error
- public static string Encrypt(string data)
- {
+// see https://msdn.microsoft.com/en-us/library/system.security.cryptography.rsacryptoserviceprovider.aspx
+// let exception be thrown if error
+public static string Encrypt(string data)
+{
     if (string.IsNullOrEmpty(data))
     {
   		return null;
