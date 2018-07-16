@@ -111,6 +111,7 @@ def privKeyPEM(xmlPrivateKeyFile):
    q = GetLong(rsaKeyValue.getElementsByTagName('Q')[0].childNodes)
    qInv = GetLong(rsaKeyValue.getElementsByTagName('InverseQ')[0].childNodes)
    privateKey = RSA.construct((modulus, exponent, d, p, q, qInv))
+   fileName = basename(xmlPrivateKeyFile)
    with open (fileName+'.pem', 'w') as pkFile:
       pkFile.write(privateKey.exportKey())
    return
